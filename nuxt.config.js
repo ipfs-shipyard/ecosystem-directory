@@ -56,9 +56,7 @@ export default {
   // ---------------------------------------------------------------------------
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/moment-module#readme
-    '@nuxtjs/moment'
+    '@nuxtjs/eslint-module'
   ],
   // /////////////////////////////////////////////////////////// Nuxt.js Modules
   // ---------------------------------------------------------------------------
@@ -69,26 +67,24 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt-community/style-resources-module/
     '@nuxtjs/style-resources',
-    // Collection of helper modules, plugins and functions
-    '~/modules/zero/core',
-    '~/modules/zero/pagination',
-    '~/modules/zero/filters',
     // Doc: https://github.com/agency-undone/nuxt-module-ipfs
     'nuxt-module-ipfs'
   ],
-  // ///////////////////////////////////////////////////////// [Module] MomentJS
-  // ---------------------- Doc: https://github.com/nuxt-community/moment-module
-  moment: {
-    timezone: true,
-    defaultTimezone: 'UTC'
-  },
   // ///////////////////////////////////////////////////////////// [Module] Zero
   // ---------------------------------------------------------------------------
   zero: {
-    // -------------------------------------------------------- [Plugin] Toaster
-    toaster: {
-      display: 10,
-      timeout: 5000
+    core: {
+      include: true,
+      toaster: {
+        display: 10,
+        timeout: 5000
+      }
+    },
+    filters: {
+      include: true
+    },
+    pagination: {
+      include: true
     }
   },
   // //////////////////////////////////////////////////////////// [Module] Axios

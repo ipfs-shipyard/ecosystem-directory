@@ -1,8 +1,13 @@
 # Boilerplate Ecosystem Directory
 
-Interactive ecosystem directory and showcase meant to be cloned
+This is the Shipyard repo for the Interactive Ecosystem Directory and Showcase. This is an abstracted repo, intended to be cloned and re-used. It is builds into a static site with VueJS and Nuxt.
 
-**Just want to add a new project to the IPFS ecosystem directory? [Use this form](https://airtable.com/shrjwvk9pAeAk0Ci7).**
+**Just want to add a new project to an existing directory? Use these links**
+- [Form](https://airtable.com/shrjwvk9pAeAk0Ci7) to add a new project to the [IPFS Ecosystem Directory](https://ecosystem.ipfs.io/)**
+- [Form](https://airtable.com/shrurjLTEsPeNW2Db) to add a new project to the [Filecoin Ecosystem Directory](https://ecosystem.filecoin.io/)**
+
+
+> _Note: The workflows and docs below contain IPFS-specific links, examples and procedures, but also generally apply to any instantiation of this Ecosystem app._
 
 ***
 
@@ -11,6 +16,8 @@ Interactive ecosystem directory and showcase meant to be cloned
 The existing workflow for adding a project to the ecosystem directory, or amending an existing project, is as described below.
 
 ### Adding a New Project
+
+
 - Project info is added to the [master IPFS project database](https://airtable.com/tblxBjPTzHXiUVZAA/viwpijXTIFraPRkhE?blocks=hide) in one of two ways:
      - Directly in the base as a new row
      - By requesting a project's representative fill in the [IPFS Ecosystem Directory Submission Form](https://airtable.com/shrjwvk9pAeAk0Ci7)
@@ -18,6 +25,7 @@ The existing workflow for adding a project to the ecosystem directory, or amendi
 - If the project is approved to be included in the directory, directions for adding the data to the repo can be found [here](#transforming-project-data)
 
 ### Amending an Existing Project
+
 - Project info should be amended in the [master IPFS project database](https://airtable.com/tblxBjPTzHXiUVZAA/viwpijXTIFraPRkhE?blocks=hide) as a single source of truth
 - From there, un-tick and re-tick the `Include in directory?` box to regenerate the JSON
 - Replace the JSON and/or images in the repo as indicated in the [instructions](#transforming-project-data)
@@ -28,7 +36,9 @@ The existing workflow for adding a project to the ecosystem directory, or amendi
 
 To view all projects in the ecosystem directory in a "logo parade" showcase format suitable for including in a slide deck, see the instructions below — this includes how to customize the grid to get the representation that's most useful for you.
 
-TLDR: https://ecosystem.ipfs.io/showcase/?category=focus is a general-purpose, useful grid if you don't want to build a custom one.
+TLDR: The showcase grid is a general-purpose, useful grid if you don't want to build a custom one.
+
+[Demo link](https://ecosystem.ipfs.io/showcase/?category=focus ) on the IPFS Ecosystem site.
 
 ## Behavior
 

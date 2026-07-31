@@ -1,9 +1,28 @@
+> [!IMPORTANT]
+> **This boilerplate is no longer maintained and the repository is archived.**
+>
+> The live IPFS Ecosystem Directory at
+> [ecosystem.ipfs.tech](https://ecosystem.ipfs.tech/) is **not** built from this
+> repository. It lives in
+> [ipfs/ecosystem-directory](https://github.com/ipfs/ecosystem-directory), which
+> is maintained. Go there for anything to do with the real site, including
+> adding a project.
+>
+> What is left here is the abstracted, clone-and-reuse version, last worked on
+> in early 2022. The Nuxt module it is built around,
+> [nuxt-module-ecosystem-directory](https://github.com/ipfs-shipyard/nuxt-module-ecosystem-directory),
+> is archived as well, so expect to do some work before this builds.
+>
+> The repository can be unarchived, but only for a named maintainer who commits
+> to keeping it up. If that is you, reach out to the
+> [IPFS Foundation](https://ipfsfoundation.org/about/). Forking is fine too.
+
 # Boilerplate Ecosystem Directory
 
 This is the Shipyard repo for the Interactive Ecosystem Directory and Showcase. This is an abstracted repo, intended to be cloned and re-used. It is builds into a static site with VueJS and Nuxt.
 
 **Just want to add a new project to an existing directory? Use these links**
-- [Form](https://airtable.com/shrjwvk9pAeAk0Ci7) to add a new project to the [IPFS Ecosystem Directory](https://ecosystem.ipfs.io/)**
+- [Form](https://airtable.com/shrjwvk9pAeAk0Ci7) to add a new project to the [IPFS Ecosystem Directory](https://ecosystem.ipfs.tech/)**
 - [Form](https://airtable.com/shrurjLTEsPeNW2Db) to add a new project to the [Filecoin Ecosystem Directory](https://ecosystem.filecoin.io/)**
 
 
@@ -38,11 +57,11 @@ To view all projects in the ecosystem directory in a "logo parade" showcase form
 
 TLDR: The showcase grid is a general-purpose, useful grid if you don't want to build a custom one.
 
-[Demo link](https://ecosystem.ipfs.io/showcase/?category=focus ) on the IPFS Ecosystem site.
+[Demo link](https://ecosystem.ipfs.tech/showcase/?category=focus ) on the IPFS Ecosystem site.
 
 ## Behavior
 
-- The showcase view is visible in its bare form at [ecosystem.ipfs.io/showcase](https://ecosystem.ipfs.io/showcase)
+- The showcase view is visible in its bare form at [ecosystem.ipfs.tech/showcase](https://ecosystem.ipfs.tech/showcase)
 - It provides a logo-based visual summary of the projects in the app by category
 - Each tag within the selected category is assigned a block
 - The container for the tag is sized based on whether there's a small, medium, or large quantity of projects within it
@@ -54,9 +73,9 @@ TLDR: The showcase grid is a general-purpose, useful grid if you don't want to b
 Customizing the view is done using GET parameters. You might notice that the base showcase link feels a little empty.
 
 Adding a target top-level `category` param to showcase solves this issue. Examples:
-- [/showcase/?category=industry](https://ecosystem.ipfs.io/showcase/?category=industry)
-- [/showcase/?category=focus](https://ecosystem.ipfs.io/showcase/?category=focus)
-- [/showcase/?category=benefits](https://ecosystem.ipfs.io/showcase/?category=benefits)
+- [/showcase/?category=industry](https://ecosystem.ipfs.tech/showcase/?category=industry)
+- [/showcase/?category=focus](https://ecosystem.ipfs.tech/showcase/?category=focus)
+- [/showcase/?category=benefits](https://ecosystem.ipfs.tech/showcase/?category=benefits)
 
 > Note: This category selection will work for _both_ categories that allow one tag per project (category in which tags are mutually exclusive) and categories that allow multiple tags.
 
@@ -67,7 +86,7 @@ Instances of this app may have varying quantities of projects. To help the showc
 - `md` minimum projects with a tag to display in a medium container (default is 10, if no value is provided)
 - `lg` minimum projects with a tag to display in a large container ((default is 25, if no value is provided)
 
-Example use case: [/showcase/?category=focus&md=5&lg=15](https://ecosystem.ipfs.io/showcase/?category=focus&md=5&lg=15)
+Example use case: [/showcase/?category=focus&md=5&lg=15](https://ecosystem.ipfs.tech/showcase/?category=focus&md=5&lg=15)
 
 > Note: The Showcase view is designed to support rows of 5 logos, so setting `lg` and `md` as multiples of 5 is recommended for the ideal visual appearance.
 
@@ -83,12 +102,10 @@ Example use case: [/showcase/?category=focus&md=5&lg=15](https://ecosystem.ipfs.
 
 ### Deployment
 
-This repo is currently deployed to Fleek on the following URLs:
-
-`main` branch: https://ecosystem.ipfs.io/
-`develop` branch: https://ipfs-ecosystem-develop.on.fleek.co/
-
-Pushes made to the `main` or `develop` branches of this repo will automatically be reflected in the URLs above. Please allow 2-5 minutes for the application to re-build before seeing changes in your browser.
+This repo no longer deploys anywhere. It was wired to Fleek, with `main`
+publishing to https://ecosystem.ipfs.tech/ and `develop` to
+`ipfs-ecosystem-develop.on.fleek.co`. That site is now built from
+[ipfs/ecosystem-directory](https://github.com/ipfs/ecosystem-directory) instead.
 
 
 ### Server
